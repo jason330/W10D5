@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom/'; //cjs/react-router-dom.min
 import App from '../../App'
 
 function Root () {
-  console.log('test2')
   return (
     <BrowserRouter>
       <App />    
