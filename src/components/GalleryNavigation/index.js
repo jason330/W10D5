@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import './GalleryNavigation.css';
 
 function GalleryNavigation({ galleries }) {
   console.log(galleries);
@@ -8,7 +9,7 @@ function GalleryNavigation({ galleries }) {
   return (
     <nav>
       <h1>Galleries</h1>
-      <NavLink to="/">Home</NavLink>
+      <NavLink exact to="/">Home</NavLink>
       <ul>{galleryList}</ul>
     </nav>
   )
