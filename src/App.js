@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="page-wrapper">
       <GalleryNavigation galleries={harvardArt.records} />
-      <Route path="/galleries/:galleryId" component={GalleryView}></Route>
+      <Route path="/galleries/:galleryId" component={() => <GalleryView galleries={harvardArt.records}/>} />
     </div>
   );
 }
